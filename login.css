@@ -1,0 +1,567 @@
+/* Nathan Bourke - K00243153 - Responsive Web Design*/
+
+@media screen and (min-width: 1250px) {
+
+body {
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+}
+
+
+    .wrapper {
+        display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 220px 300px 300px;
+        background-color: #fff;
+        
+    }
+
+    .box {
+        background-color: #fff;
+        color: #fff;
+        padding: 20px;
+        font-size: 140%;
+
+    }
+
+    .box .box {
+        color: #444;
+    }
+
+    .header {
+        grid-column: 1 / -1;
+        background: url(Assets/Header.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+    }
+	
+	.wnews{
+		position: relative;
+		left: 18%;
+		top: 0%;
+		font-size: 1.2em;
+	}
+	
+	.usnews{
+		position: relative;
+		left: 32%;
+		bottom: 25.6%;
+		font-size: 1.2em;
+	}
+	
+	.uknews{
+		position: relative;
+		left: 46%;
+		bottom: 51.5%;
+		font-size: 1.2em;
+	}
+	
+	.inews{
+		position: relative;
+		left: 60%;
+		bottom: 78%;
+		font-size: 1.2em;
+	}
+	
+	.enews{
+		position: relative;
+		left: 74%;
+		bottom: 103.9%;
+		font-size: 1.2em;
+	}
+	
+	.logo{
+		text-align: center;
+	}
+	
+	.logo img{
+		width: 150px;
+		float: both;
+		padding: 20px;
+	}
+	
+
+	
+/*Main Story*/
+
+    .b {
+        grid-column: 1 / -1;
+        background-color: #fff;
+        display: grid;
+		grid-gap: 40px;
+		grid-template-rows: 500px 500px;
+		padding-left: 90px;
+		padding-right: 90px;
+    }
+	
+	form {
+		border: 3px solid #f1f1f1;
+		height: 220px;
+		}
+	h2{
+		color: #555;	
+	}
+	.box b {
+		color: #555;
+	}
+
+	.container input[type=text], input[type=password] {
+	  width: 60%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+
+	.container button {
+	 width: 60%;
+	  background-color: red;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	}
+
+	button:hover {
+	  opacity: 0.8;
+	}
+
+
+	form {
+		position: relative;
+		bottom: 70.9%;
+		padding: 16px;
+	}
+
+	
+/*Footer*/
+
+    .d {
+        grid-column: 1 / -1;
+        display: grid;
+		background-color: #666;
+		overflow: hidden;
+		border-top: 7px solid red;
+    }
+	
+	.flogo{
+		position: relative;
+		top: 10%;
+		left: 75%;
+	}
+	
+	.fadvert{
+		color: #fff;
+		position: relative;
+		bottom: 80%;
+		left: 10%;
+	}
+	
+	.fnewsletter{
+		color: #fff;
+		position: relative;
+		bottom: 50%;
+		left: 10%;
+	}
+	
+	.frss{
+		color: #fff;
+		position: relative;
+		bottom: 20%;
+		left: 10%;
+	}
+	
+	.fterms{
+		color: #fff;
+		position: relative;
+		bottom: 380%;
+		left: 30%;
+	}
+	
+	.fprivacy{
+		color: #fff;
+		position: relative;
+		bottom: 350%;
+		left: 30%;
+	}
+	
+	.fbook{
+		color: #fff;
+		position: relative;
+		bottom: 320%;
+		left: 30%;
+	}
+	
+	.flogin{
+		color: #fff;
+		position: relative;
+		bottom: 680%;
+		left: 50%;
+	}
+	
+	.fcontact{
+		color: #fff;
+		position: relative;
+		bottom: 650%;
+		left: 50%;
+	}
+	
+	.fabout{
+		color: #fff;
+		position: relative;
+		bottom: 620%;
+		left: 50%;
+	}
+	
+	.fnewsbutton{
+		font-size: .8em;
+		position: relative;
+		right: 0%;
+		bottom: 600px;
+		left: 70%;
+		width: 350px;
+		height: 40px;
+	}
+	
+	.fnewsbutton fieldset{
+		margin: 0px;
+		padding: 10px 10px 20px 30px;
+		border-radius: 10px;
+		border-color: red;
+	}
+	
+	.footer input[type=button]{
+		background-color: red;
+		border: none;
+		padding: 10px 10px;
+		color: white;
+		border-radius: 10px;
+	}
+	
+	.footer input[type=text]{
+		border: none;
+		height: 13px;
+		padding: 10px 10px;
+		color: white;
+		border-radius: 10px;
+	}
+	
+	.fcopyright{
+		color: #000;
+		position: relative;
+		bottom: 600%;
+		font-size: .9em;
+		left: 5%;
+	}
+	
+	
+/*End Footer*/
+	
+}
+	
+@media screen and (max-width: 1250px) {
+
+body {
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+}
+
+
+    .wrapper {
+        display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
+		grid-template-rows: 500px 300px 500px;
+        background-color: #fff;
+        color: #444;
+    }
+
+    .box {
+        background-color: #fff;
+        color: #fff;
+        padding: 20px;
+        font-size: 150%;
+
+    }
+
+    .box .box {
+        
+        color: #444;
+    }
+	
+/*header*/
+
+    .header {
+        grid-column: 1 / -1;
+        background: url(Assets/Header.png);
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		overflow: hidden;
+    }
+	
+	.wnews{
+		position: relative;
+		left: 2%;
+		top: 18%;
+		font-size: .8em;
+	}
+	
+	.usnews{
+		position: relative;
+		left: 22%;
+		top: 9.9%;
+		font-size: .8em;
+	}
+	
+	.uknews{
+		position: relative;
+		left: 40%;
+		top: 1.8%;
+		font-size: .8em;
+	}
+	
+	.inews{
+		position: relative;
+		left: 59%;
+		bottom: 6.5%;
+		font-size: .8em;
+	}
+	
+	.enews{
+		position: relative;
+		left: 79%;
+		bottom: 14.9%;
+		font-size: .8em;
+		
+	}
+	
+	
+	.logo {padding: 40px;
+		width: 120px;
+		}
+	
+	
+/*Mainstory*/
+
+    .b {
+        grid-column: 1 / -1;
+        background-color: #fff;
+        display: grid;
+		grid-gap: 40px;
+		grid-template-rows: 500px 500px 500px;
+    }
+	
+		form {
+		border: 3px solid #f1f1f1;
+		height: 220px;
+		}
+	h2{
+		color: #555;	
+	}
+	.box b {
+		color: #555;
+	}
+
+	.container input[type=text], input[type=password] {
+	  width: 60%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+
+	.container button {
+	 width: 60%;
+	  background-color: red;
+	  color: white;
+	  padding: 14px 20px;
+	  margin: 8px 0;
+	  border: none;
+	  cursor: pointer;
+	  width: 100%;
+	}
+
+	button:hover {
+	  opacity: 0.8;
+	}
+
+
+	form {
+		position: relative;
+		bottom: 70.9%;
+		padding: 16px;
+	}
+	
+	/*Footer*/
+	
+    .d {
+        grid-column: 1 / -1;
+        display: grid;
+		background-color: #666;
+		overflow: hidden;
+		border-top: 7px solid red;
+    }
+	
+	.flogo{
+		position: relative;
+		top: 10%;
+		left: 50%;
+	}
+	
+	.flogo img{
+		height: 100px;
+		width: 200px;
+	}
+	
+	
+	.fadvert{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 80%;
+		left: 1%;
+	}
+	
+	.fnewsletter{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 50%;
+		left: 1%;
+	}
+	
+	.frss{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 20%;
+		left: 1%;
+	}
+	
+	.fterms{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 380%;
+		left: 20%;
+	}
+	
+	.fprivacy{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 350%;
+		left: 20%;
+	}
+	
+	.fbook{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 320%;
+		left: 20%;
+	}
+	
+	.flogin{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 680%;
+		left: 35%;
+	}
+	
+	.fcontact{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 650%;
+		left: 35%;
+	}
+	
+	.fabout{
+		font-size: .8em;
+		color: #fff;
+		position: relative;
+		bottom: 620%;
+		left: 35%;
+	}
+	
+	.fnewsbutton{
+		font-size: .8em;
+		position: relative;
+		right: 0%;
+		bottom: 1000%;
+		right: 0%;
+		width: 350px;
+		height: 40px;
+	}
+	
+	.fnewsbutton fieldset{
+		margin: 0px;
+		padding: 10px 10px 20px 30px;
+		border-radius: 10px;
+		border-color: red;
+	}
+	
+	.footer input[type=button]{
+		background-color: red;
+		border: none;
+		padding: 10px 10px;
+		color: white;
+		border-radius: 10px;
+	}
+	
+	.footer input[type=text]{
+		border: none;
+		height: 13px;
+		padding: 10px 10px;
+		color: white;
+		border-radius: 10px;
+	}
+	
+	.fcopyright{
+		color: #000;
+		position: relative;
+		bottom: 430%;
+		font-size: .7em;
+		left: 5%;
+	}
+	
+	
+/*End Footer*/
+	
+	
+}
+
+@media screen and (max-width: 900px){
+	
+	.c {
+        grid-column: 1 / -1;
+
+		border-left: 0px solid red;
+		border-top: 7px solid red;
+		padding-top: 100px;
+        display: grid;
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 1fr 1fr 1fr;
+		overflow: hidden;
+	}
+	
+	 .wrapper {
+        display: grid;
+		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
+		grid-template-rows: 500px 200px 300px 200px;
+        
+        color: #444;
+    }
+	
+}
