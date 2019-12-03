@@ -4,7 +4,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 			<title>
-			 Login
+			 Subscribe
 			</title>
 		<link rel="stylesheet" type="text/css" href="details.css">
 		</head>
@@ -12,8 +12,8 @@
 				
 					<div class="wrapper">
 						<div class="box header">
-							<div class="logo" onclick="location.href='index.html';" style="cursor:pointer">
-								<img src="Assets/Logo.png" alt="Logo" align="middle">
+							<div class="logo">
+								<img src="Assets/Logo.png" alt="Logo" align="middle" onclick="location.href='index.html';" style="cursor:pointer">
 							</div>
 							
 							
@@ -45,40 +45,76 @@
 						
 						 <div class="box b">
 						 
-						 <h2>Login Form</h2>
+						 <h2>Subscribe</h2>
 
-							<form id="loginDetails" action="indexLogged.html" method="post" onsubmit="return validate()">
+							<form id="loginDetails" action="login.html" method="post" onsubmit="return validate()">
 
 							  <div class="container">
-								<label for="uname"><b>Username:</b></label><p></p>
-								<input type="text" placeholder="Enter Username" id="uname" name="uname">
+								<label for="nuname"><b>Username:</b></label><p></p>
+								<input type="text" placeholder="Enter Username" id="nuname" name="nuname">
+								<input type="text" placeholder="Confirm Username" id="cuname" name="cuname">
 								
 								<p></p>
-								<label for="psw"><b>Password:</b></label><p></p>
-								<input type="password" placeholder="Enter Password" id="psw" name="psw">
+								<label for="npsw"><b>Password:</b></label><p></p>
+								<input type="password" placeholder="Enter Password" id="npsw" name="npsw">
+								<input type="password" placeholder="Confirm Password" id="cpsw" name="cpsw">
 								
 								<p></p>
-								<button type="submit">Login</button>
+								<label for="nemail"><b>Email:</b></label><p></p>
+								<input type="text" placeholder="Enter Email" id="nemail" name="nemail">
+								<input type="text" placeholder="Confirm Email" id="cemail" name="cemail">
+								
+								
+								<p></p>
+								<button type="submit">Subscribe</button>
 							  </div>
 							  <script type="text/javascript">
 								function validate()
 								{	
-									var name = document.getElementById("uname").value;
+									var nuname = document.getElementById("nuname").value;
+									var cuname = document.getElementById("cuname").value;
+									var npsw = document.getElementById("npsw").value;
+									var cpsw = document.getElementById("cpsw").value;
+									var nemail = document.getElementById("nemail").value;
+									var cemail = document.getElementById("cemail").value;
 									
-									if (name.length == 0)
+									if (nuname.length == 0)
 									{	alert("Please enter a name");
 										return false;
 									}
 									
-									var psw = document.getElementById("psw").value;
-									
-									if (psw.length == 0)
+									if (npsw.length == 0)
 									{	alert("Please enter a password");
 										return false;
 									}
 									
+									if (nemail.length == 0)
+									{	alert("Please enter an email address");
+										return false;
+									}
+									
+									if (nuname != cuname )
+									{	alert("Please make sure your username is the same as confirm username");
+										return false;
+									}
+									
+									if (npsw != cpsw)
+									{	alert("Please make sure your password is the same as confirm password");
+										return false;
+									}
+									
+									if (nemail != cemail )
+									{	alert("Please make sure your email is the same as confirm email");
+										return false;
+									}
+									
+									if (nemail.indexOf("@") == -1 || nemail.indexOf(".") == -1)
+									{	alert("Please enter a valid email address");
+										return false;
+									}
+									
 									else
-									{	return true;
+									{	alert("Thank you, " + nuname);
 									}
 									
 								}
@@ -140,7 +176,7 @@
 								var nnewsletter = document.getElementById("nnewsletter").value;
 								
 								if (nnewsletter.length == 0)
-									{	alert("Please enter a email address");
+									{	alert("Please enter an email address");
 										return false;
 									}
 								if (nnewsletter.indexOf("@") == -1 || nnewsletter.indexOf(".") == -1)

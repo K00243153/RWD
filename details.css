@@ -11,22 +11,21 @@ body {
 
     .wrapper {
         display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
-		grid-template-rows: 500px 4000px 500px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 220px 1fr 500px;
         background-color: #fff;
-        color: #444;
+        
     }
 
     .box {
         background-color: #fff;
         color: #fff;
         padding: 20px;
-        font-size: 150%;
+        font-size: 140%;
 
     }
 
     .box .box {
-        background-color: #eee;
         color: #444;
     }
 
@@ -42,52 +41,36 @@ body {
 	.wnews{
 		position: relative;
 		left: 18%;
-		top: 15%;
+		top: 0%;
 		font-size: 1.2em;
 	}
 	
 	.usnews{
 		position: relative;
 		left: 32%;
-		top: 2.4%;
+		bottom: 25.6%;
 		font-size: 1.2em;
 	}
 	
 	.uknews{
 		position: relative;
 		left: 46%;
-		bottom: 9.9%;
+		bottom: 51.5%;
 		font-size: 1.2em;
 	}
 	
 	.inews{
 		position: relative;
 		left: 60%;
-		bottom: 22.2%;
+		bottom: 78%;
 		font-size: 1.2em;
 	}
 	
 	.enews{
 		position: relative;
 		left: 74%;
-		bottom: 34.9%;
+		bottom: 103.9%;
 		font-size: 1.2em;
-	}
-	
-	.search {
-		
-		font-size: 0.8em;
-		position: relative;
-		background-color: red;
-		right: 0%;
-		border-radius: 20px 20px 0px 0px;
-		bottom: 200px;
-		width: 180px;
-		height: 40px;
-	}
-	
-	.search fieldset{
-		border: none;
 	}
 	
 	.logo{
@@ -95,114 +78,69 @@ body {
 	}
 	
 	.logo img{
-		width: 400px;
+		width: 150px;
 		float: both;
-		padding: 40px;
+		padding: 20px;
 	}
 	
-	.log {
-		position: relative;
-		bottom: 200px;
-	}
-	
-	.log img{
-		float: right;
-		padding: 5px;
-	}
+
 	
 /*Main Story*/
 
     .b {
-        grid-column: 1 / 5;
+        grid-column: 1 / -1;
         background-color: #fff;
         display: grid;
 		grid-gap: 40px;
-		grid-template-rows: 1fr 500px 500px 500px 500px 500px 500px;
+		padding-left: 90px;
+		padding-right: 90px;
     }
 	
-	.atitle{
-		position: relative;
-		bottom: 50px;
-		right: 40px;
-		font-size: .7em;
-		border-radius: 0px 0px 20px 0px;
-		color: white;
-		height: 50px;
-		width: 160px;
-		background-color: red;
+	h2{
+		color: #555;	
+	}
+	.box b {
+		color: #555;
 	}
 	
-	.atitle p{
-		padding-top: 10px;
-		text-align: center;
-		}
-	
-	.text1 { 
-		position: relative;
-		top: 50%;
-		color: white;}
-	
-	
-	.storyImg{
-		font-size: 0.8em;
+	.container {
+		width: 500px;
 	}
 	
-	.storyImg img{
-		padding-right: 20px;
-		float: left;
-	}
-	
-	
-	.ma{
-		background: linear-gradient(transparent, black), url(Assets/StoryPic12.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-	}
-	
-	.me{
-		border-top: 7px solid red;
-		overflow: hidden;
-		background: linear-gradient(transparent, white)
-	}
-	
-	.mb, .mc, .md, .mf, .mg{
-		border-top: 7px solid gray;
-		overflow: hidden;
-		background: linear-gradient(transparent, white)
-		}
-	
-	.storyImg2{
-		font-size: 0.8em;
+
+	.container input[type=text], input[type=password] {
+	  width: 60%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
 	}
 
-/*Sidebar*/
-    .c {
-        grid-column: 5 / -1;
-		border-left: 7px solid red;
-		padding-top: 100px;
-        display: grid;
-		grid-gap: 10px;
-		grid-template-rows: 600px 600px 600px 600px 600px 600px;
-    }
-	
-	.stitle{
-		position: relative;
-		bottom: 146px;
-		right: 40px;
-		font-size: .7em;
-		border-radius: 0px 0px 20px 0px;
-		color: white;
-		height: 50px;
-		width: 160px;
-		background-color: red;
+	.container button {
+	  width: 100px;
+	  background-color: red;
+	  color: white;
+	  display: inline-block;
+	  padding: 14px 20px;
+	  margin: 8px 0px;
+	  border: none;
+	  cursor: pointer;
 	}
 	
-	.stitle p{
-		padding-top: 10px;
-		text-align: center;
-		}
-		
+
+	button:hover {
+	  opacity: 0.8;
+	}
+
+
+	form {
+		position: relative;
+		border: 3px solid #f1f1f1;
+		width: 500px;
+		padding: 16px;
+	}
+
 	
 /*Footer*/
 
@@ -300,7 +238,7 @@ body {
 		border-color: red;
 	}
 	
-	input[type=button]{
+	.d input[type=button]{
 		background-color: red;
 		border: none;
 		padding: 10px 10px;
@@ -308,17 +246,16 @@ body {
 		border-radius: 10px;
 	}
 	
-	input:hover {
-	  opacity: 0.8;
-	}
-	
-	input[type=text]{
+	.d input[type=text]{
 		border: none;
 		height: 13px;
 		padding: 10px 10px;
 		color: black;
 		border-radius: 10px;
 	}
+	
+	
+	
 	
 	.fcopyright{
 		color: #000;
@@ -344,8 +281,7 @@ body {
 
     .wrapper {
         display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
-		grid-template-rows: 500px 4700px 1700px 500px;
+		grid-template-columns: 1fr;
         background-color: #fff;
         color: #444;
     }
@@ -359,7 +295,7 @@ body {
     }
 
     .box .box {
-        background-color: #ccc;
+        
         color: #444;
     }
 	
@@ -410,35 +346,11 @@ body {
 		
 	}
 	
-	.search {
-		
-		font-size: 0.8em;
-		position: relative;
-		background-color: red;
-		right: 0%;
-		border-radius: 20px 20px 0px 0px;
-		bottom: 20px;
-		width: 180px;
-		height: 40px;
-	}
-	
-	.search fieldset{
-		border: none;
-	}
 	
 	.logo {padding: 40px;
 		width: 120px;
 		}
 	
-	.log {
-		position: relative;
-		bottom: 10px;
-		}
-		
-	.log img{
-		float: right;
-		padding: 5px;
-	}
 	
 /*Mainstory*/
 
@@ -446,104 +358,47 @@ body {
         grid-column: 1 / -1;
         background-color: #fff;
         display: grid;
-		grid-gap: 40px;
-		grid-template-rows: 1fr 600px 600px 600px 600px 600px 600px;
+
     }
 	
-	.text1 { position: relative;
-			top: 50%;
-			color: white;}
-			
-	.atitle{
-		position: relative;
-		top: -50px;
-		right: 40px;
-		font-size: .7em;
-		border-radius: 0px 0px 20px 0px;
-		color: white;
-		height: 50px;
-		width: 160px;
-		background-color: red;
-	}
-	
-	.atitle p{
-		padding-top: 10px;
-		text-align: center;
-		}
-	
-	.ma{
-		background: linear-gradient(transparent, black), url(Assets/StoryPic12.jpg);
-		background-position: center;
-		background-repeat: no-repeat;
-		background-size: cover;
-		
-	}
-	
-	.me{
-		border-top: 7px solid red;
-		overflow: hidden;
-		background: linear-gradient(transparent, white)
-	}
-	
-	.mb, .mc, .md, .mf, .mg{
-		border-top: 7px solid gray;
-		overflow: hidden;
-		background: linear-gradient(transparent, white)
-		}
 
-/*Sidebar*/
-
-    .c {
-        grid-column: 1 / -1;
-		grid-row: 3 / 4;
-		border-left: 0px solid red;
-		border-top: 7px solid red;
-		padding-top: 100px;
-        display: grid;
-		grid-gap: 10px;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr 1fr;
-		overflow: hidden;
-		
-    }
-	
-	.stitle{
-		position: relative;
-		bottom: 146px;
-		right: 40px;
-		font-size: .7em;
-		border-radius: 0px 0px 20px 0px;
-		color: white;
-		height: 50px;
-		width: 160px;
-		background-color: red;
+	h2{
+		color: #555;	
 	}
-	
-	.stitle p{
-		padding-top: 10px;
-		text-align: center;
-		}
-		
-	.atitle{
-		position: relative;
-		bottom: 200px;
-		right: 40px;
-		font-size: .7em;
-		border-radius: 0px 0px 20px 0px;
-		color: white;
-		height: 50px;
-		width: 160px;
-		background-color: red;
+	.box b {
+		color: #555;
 	}
-	
-	.atitle p{
-		padding-top: 10px;
-		text-align: center;
-		}
-		
 
-	.storyImg2{
-		font-size: 0.8em;
+	.container input[type=text], input[type=password] {
+	  width: 60%;
+	  padding: 12px 20px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border: 1px solid #ccc;
+	  box-sizing: border-box;
+	}
+
+	.container button {
+	  width: 100px;
+	  background-color: red;
+	  color: white;
+	  display: inline-block;
+	  padding: 14px 20px;
+	  margin: 8px 0px;
+	  border: none;
+	  cursor: pointer;
+	}
+
+	button:hover {
+	  opacity: 0.8;
+	}
+
+
+	form {
+		position: relative;
+		width: 500px;
+		border: 3px solid #f1f1f1;
+		padding: 16px;
 	}
 	
 	/*Footer*/
@@ -657,7 +512,7 @@ body {
 		border-color: red;
 	}
 	
-	input[type=button]{
+	.d input[type=button]{
 		background-color: red;
 		border: none;
 		padding: 10px 10px;
@@ -665,11 +520,11 @@ body {
 		border-radius: 10px;
 	}
 	
-	input[type=text]{
+	.d input[type=text]{
 		border: none;
-		height: 30px;
+		height: 13px;
 		padding: 10px 10px;
-		color: black;
+		color: white;
 		border-radius: 10px;
 	}
 	
@@ -692,22 +547,20 @@ body {
 	
 	.c {
         grid-column: 1 / -1;
-		grid-row: 3 / 4;
+
 		border-left: 0px solid red;
 		border-top: 7px solid red;
 		padding-top: 100px;
         display: grid;
 		grid-gap: 10px;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
 		overflow: hidden;
 	}
 	
 	 .wrapper {
         display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
-		grid-template-rows: 500px 4700px 1fr 500px;
-        background-color: #fff;
+
+        
         color: #444;
     }
 	

@@ -12,14 +12,13 @@ body {
     .wrapper {
         display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
-		grid-template-rows: 500px 4000px 500px;
+		grid-template-rows: 500px 1fr 500px;
         background-color: #fff;
         
     }
 
     .box {
-        background-color: #fff;
-        color: #fff;
+
         padding: 20px;
         font-size: 140%;
 
@@ -36,6 +35,7 @@ body {
 		background-repeat: no-repeat;
 		background-size: cover;
 		overflow: hidden;
+		color: white;
     }
 	
 	.wnews{
@@ -48,28 +48,28 @@ body {
 	.usnews{
 		position: relative;
 		left: 32%;
-		top: 2.4%;
+		top: 3.6%;
 		font-size: 1.2em;
 	}
 	
 	.uknews{
 		position: relative;
 		left: 46%;
-		bottom: 9.9%;
+		bottom: 8%;
 		font-size: 1.2em;
 	}
 	
 	.inews{
 		position: relative;
 		left: 60%;
-		bottom: 22.2%;
+		bottom: 20%;
 		font-size: 1.2em;
 	}
 	
 	.enews{
 		position: relative;
 		left: 74%;
-		bottom: 34.9%;
+		bottom: 32%;
 		font-size: 1.2em;
 	}
 	
@@ -125,7 +125,7 @@ body {
 		border-top: 3px solid #555;
 		border-bottom: 3px solid #555;
 		height: 50px;
-		color: #444;
+		color: #222;
 		font-size: 0.8em;
 		float: bottom;
 	}
@@ -180,7 +180,6 @@ body {
 	}
 	
 	.author{
-		
 	}
 	
 	.ma, .mb, .mc, .md{
@@ -193,7 +192,6 @@ body {
 		right: 40px;
 		font-size: .7em;
 		border-radius: 0px 0px 20px 0px;
-		color: white;
 		height: 50px;
 		width: 160px;
 		background-color: red;
@@ -201,6 +199,7 @@ body {
 	
 	.atitle p{
 		font-size: 140%;
+		color: white;
 		padding-top: 10px;
 		text-align: center;
 		}
@@ -217,7 +216,7 @@ body {
 	
 	.stitle{
 		position: relative;
-		bottom: 142px;
+		bottom: 149px;
 		right: 40px;
 		font-size: .7em;
 		border-radius: 0px 0px 20px 0px;
@@ -346,7 +345,7 @@ body {
 		border: none;
 		height: 13px;
 		padding: 10px 10px;
-		color: white;
+		color: black;
 		border-radius: 10px;
 	}
 	
@@ -731,7 +730,7 @@ body {
 		border: none;
 		height: 13px;
 		padding: 10px 10px;
-		color: white;
+		color: black;
 		border-radius: 10px;
 	}
 	
@@ -751,6 +750,8 @@ body {
 
 @media screen and (max-width: 900px){
 	
+	.ma, .mb, .mc, .md {font-size: 80%;}
+	
 	.c {
         grid-column: 1 / -1;
 		grid-row: 3 / 4;
@@ -760,14 +761,14 @@ body {
         display: grid;
 		grid-gap: 10px;
 		grid-template-columns: 1fr;
-		grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+		grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
 		overflow: hidden;
 	}
 	
 	 .wrapper {
         display: grid;
 		grid-template-columns: 1fr 1fr 1fr 1fr 300px 200px;
-		grid-template-rows: 500px 3000px 1fr 1000px;
+		grid-template-rows: 500px 1fr 1fr 1fr;
         
         color: #444;
     }
